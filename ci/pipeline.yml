@@ -153,7 +153,9 @@ resources:
     type: git
     source:
       uri: git@github.com:a18e/pcap-release.git
+
       branch: setup-ci-environment
+
       private_key: ((github.private_key))
 
   - name: git-pull-requests
