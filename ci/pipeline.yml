@@ -152,7 +152,7 @@ resources:
   - name: git
     type: git
     source:
-      uri: git@github.com:a18e/pcap-release.git
+      uri: git@github.com:sap-contributions/pcap-release.git
       branch: setup-ci-environment
       private_key: ((github.private_key))
 
@@ -160,8 +160,8 @@ resources:
     type: pull-request
     source:
       access_token: ((github.access_token))
-      repository: a18e/pcap-release
-      base_branch: main
+      repository: sap-contributions/pcap-release
+      base_branch: setup-ci-environment
       labels: [run-ci]
 
   # - name: notify
